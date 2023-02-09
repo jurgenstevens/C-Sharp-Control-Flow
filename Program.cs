@@ -9,16 +9,26 @@ namespace ControlFlow
     {
         static void Main(string[] args)
         {
-            int cubedNumber = cube(5);
-            Console.WriteLine(cubedNumber);
+            // IF STATEMENTS
+            bool isMale = false;
+            bool isTall = true;
+            // && works for AND just like in JS
+            // || work for OR just like in JS
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male");
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("You're a short male");
+            } else if (!isMale && isTall) {
+                Console.WriteLine("You are not male but you are tall");
+            }
+            else
+            {
+                Console.WriteLine("You are neither tall nor male");
+            }
+
             Console.ReadLine();
         }
-        // specify the data type you're going to return with the method
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result;
-        }
-
     }
 }
