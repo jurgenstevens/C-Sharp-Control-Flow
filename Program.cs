@@ -9,26 +9,26 @@ namespace ControlFlow
     {
         static void Main(string[] args)
         {
-            // IF STATEMENTS
-            bool isMale = false;
-            bool isTall = true;
-            // && works for AND just like in JS
-            // || work for OR just like in JS
-            if (isMale && isTall)
-            {
-                Console.WriteLine("You are a tall male");
-            } else if (isMale && !isTall)
-            {
-                Console.WriteLine("You're a short male");
-            } else if (!isMale && isTall) {
-                Console.WriteLine("You are not male but you are tall");
-            }
-            else
-            {
-                Console.WriteLine("You are neither tall nor male");
-            }
+            Console.WriteLine(Max(25, 12, 20));
 
             Console.ReadLine();
+        }
+        // call this method a static int since the result will be an integer
+        static int Max(int num1, int num2, int num3)
+        {
+            int result;
+            if(num1 >= num2 && num1 >= num3)
+            {
+                result = num1;
+            } else if (num2 >= num1 && num2 >= num3)
+            {
+                result = num2;
+            } else
+            {
+                result = num3;
+            }
+
+            return result;
         }
     }
 }
