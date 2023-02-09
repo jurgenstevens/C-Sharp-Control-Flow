@@ -1,13 +1,30 @@
 // ARRAYS
-// When creating an array in C#, include the brackets to let it know you're doing so
-// that's right, you also use curly braces as to contain the data
-int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-Console.WriteLine(luckyNumbers[4]);
-// luckyNumbers[1] = 9;
-// Console.WriteLine(luckyNumbers[1]);
+    // When creating an array in C#, include the brackets to let it know you're doing so
+    // that's right, you also use curly braces as to contain the data
+    int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+    Console.WriteLine(luckyNumbers[4]);
+    // luckyNumbers[1] = 9;
+    // Console.WriteLine(luckyNumbers[1]);
 
-// when creating a new array, include its data type and how many elements the array can hold
-string[] friends = new string[5];
-friends[0] = "Dzenita";
-friends[1] = "David";
-friends[2] = "Chris";
+    // when creating a new array, include its data type and how many elements the array can hold
+    string[] friends = new string[5];
+    friends[0] = "Dzenita";
+    friends[1] = "David";
+    friends[2] = "Chris";
+
+
+// METHODS
+
+    static void Main(string[] args)
+    {
+        // METHODS
+        SayHi("Jurgen", 31);
+        SayHi("Dzenita", 27);
+
+        Console.ReadLine();
+    }
+
+    static void SayHi(string name, int age)
+    {
+        Console.WriteLine("Hello " + name + " you are " + age);
+    }
