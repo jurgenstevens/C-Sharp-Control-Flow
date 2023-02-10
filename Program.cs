@@ -10,19 +10,35 @@ namespace ControlFlow
     {
         static void Main(string[] args)
         {
-            /* Nested
-             Arrays
-             */
-            int[,] NumberGrid =
+            // EXCEPTION HANDLING
+            try
             {
-                { 1, 2 },
-                { 3, 4 },
-                { 5, 6 }
-            };
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(NumberGrid[1, 1]);
+                Console.WriteLine(num1 / num2);
 
-            Console.ReadLine();
+                Console.ReadLine();
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message); // 0 -> "Attempted to divide by zero"
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message); // g -> "Input string was not in correct format"
+            }
+            //finally
+            //{
+            //    // OPTIONAL FOR WHEN EXCEPTIONS ARE HIT
+            //}
+            //catch(Exception e)
+            //{
+            //    Console.WriteLine(e.Message); // g -> "Input string was not in correct format"
+            //}
+
         }
 
     }
