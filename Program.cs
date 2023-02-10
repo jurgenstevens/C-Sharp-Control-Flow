@@ -10,14 +10,20 @@ namespace ControlFlow
     {
         static void Main(string[] args)
         {
-            // FOR LOOP
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-            for (int i = 0; i < luckyNumbers.Length; i++)
+            /* Nested
+             Arrays
+             */
+            int[,] NumberGrid =
             {
-                Console.WriteLine(luckyNumbers[i]);
-            }
-            
+                { 1, 2 },
+                { 3, 4 },
+                { 5, 6 }
+            };
+
+            Console.WriteLine(NumberGrid[1, 1]);
+
             Console.ReadLine();
         }
+
     }
 }

@@ -190,3 +190,51 @@ static void Main(string[] args)
 
             Console.ReadLine();
         }
+
+        static void Main(string[] args)
+        {
+            // FOR LOOP
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            for (int i = 0; i < luckyNumbers.Length; i++)
+            {
+                Console.WriteLine(luckyNumbers[i]);
+            }
+            
+            Console.ReadLine();
+        }
+
+        static void Main(string[] args)
+        {
+            // EXPONENT METHOD
+            Console.WriteLine(GetPow(4, 3));
+            Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for(int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
+            }
+
+            return result;
+        }
+
+        static void Main(string[] args)
+        {
+            /* Nested
+             Arrays
+             */
+            int[,] NumberGrid =
+            {
+                { 1, 2 },
+                { 3, 4 },
+                { 5, 6 }
+            };
+
+            Console.WriteLine(NumberGrid[1, 1]);
+
+            Console.ReadLine();
+        }
