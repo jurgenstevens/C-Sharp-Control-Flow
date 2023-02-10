@@ -10,38 +10,13 @@ namespace ControlFlow
     {
         static void Main(string[] args)
         {
-            // WHILE LOOPS
-            int index = 1;
-            //WHILE LOOP
-            while (index <= 5)
+            // FOR LOOP
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            for (int i = 0; i < luckyNumbers.Length; i++)
             {
-                Console.WriteLine(index);
-                index++;
+                Console.WriteLine(luckyNumbers[i]);
             }
-            //DO WHILE LOOP
-            do
-            {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);
-            // WHILE LOOP GAME
-            string secretWord = "giraffe";
-            string guess = "";
-
-            while (guess != secretWord)
-            {
-                Console.Write("Enter guess: ");
-                guess = Console.ReadLine();
-            }
-            Console.Write("You win!");
-            // DO WHILE GAME
-            do
-            {
-                Console.Write("Enter guess: ");
-                guess = Console.ReadLine();
-            } while (guess != secretWord);
-            Console.Write("You win!");
-
+            
             Console.ReadLine();
         }
     }
