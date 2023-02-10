@@ -12,13 +12,13 @@ namespace ControlFlow
         {
             // WHILE LOOPS
             int index = 1;
-            WHILE LOOP
+            //WHILE LOOP
             while (index <= 5)
             {
                 Console.WriteLine(index);
                 index++;
             }
-            DO WHILE LOOP
+            //DO WHILE LOOP
             do
             {
                 Console.WriteLine(index);
